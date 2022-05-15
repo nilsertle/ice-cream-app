@@ -3,15 +3,12 @@ import Hero from '../Hero/Hero';
 import Card from '../Card/Card';
 import Button from '../Button/Button';
 
-
-
 export default function Main(props) {
     function setColor(backgroundColor, textColor) {
         document.documentElement.style.setProperty('--background-color', backgroundColor);
         document.documentElement.style.setProperty('--text-color', textColor);
     }
     setColor("#49DCFF", "white")
-
 
     return (
         <div className="container">

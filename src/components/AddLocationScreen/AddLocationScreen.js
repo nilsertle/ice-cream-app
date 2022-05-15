@@ -34,7 +34,6 @@ export default function AddLocationScreen(props) {
         setObj({ name: value1, location: value2, flavours: value3 })
     }, [value1, value2, value3])
 
-
     return (
         <div className="screen-container">
 
