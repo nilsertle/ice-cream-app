@@ -1,6 +1,5 @@
 import '../../fonts/Barlow-ExtraBold.ttf'
 import './AddLocationScreen.css';
-import { useNavigate, useLocation } from "react-router-dom";
 import Button from '../Button/Button';
 import { useEffect, useState } from "react";
 import BackIcon from '../BackIcon/BackIcon';
