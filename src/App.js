@@ -1,25 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import Main from './components/Main/Main';
+import DetailPage from "./components/DetailPage/DetailPage"
+import AddLocationScreen from './components/AddLocationScreen/AddLocationScreen';
+import { useState } from "react";
 
-function App() {
+let globalCardContent = [];
+
+
+export default function App() {
+  const [activePage, setActivePage] = useState({ page: "main", props: {} });
+  const [cardContent, setCardContent] = useState(globalCardContent)
+
+  function handleActivePage() {
+    switch (activePage.page) {
+      case "add":
+        return <AddLocationScreen activePageHandler={setActivePage} cardContentHandler={setCardContent} />
+      case "detail":
+        return <DetailPage activePageHandler={setActivePage} cardContent={activePage.props} />
+      default:
+        return <Main activePageHandler={setActivePage} cardContent={cardContent} />
+    }
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    handleActivePage()
   );
 }
-
-export default App;

@@ -1,0 +1,28 @@
+@font-face {
+    font-family: "Barlow-ExtraBold";
+    src: local("Barlow-ExtraBold"),
+        url("../../fonts/Barlow-ExtraBold.ttf") format("truetype");
+}
+
+.button-container {
+    background-color: var(--background-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+
+.button-text {
+    font-family: "Barlow-ExtraBold";
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding: 0 20px;
+    color: var(--text-color);
+}

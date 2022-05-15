@@ -1,0 +1,26 @@
+@font-face {
+    font-family: "Barlow-ExtraBold";
+    src: local("Barlow-ExtraBold"),
+        url("../../fonts/Barlow-ExtraBold.ttf") format("truetype");
+}
+
+.hero-container {
+    background-image: url("../../asset/hero_image.png");
+    height: 240px;
+    width: 360px;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    background-color: red;
+}
+
+.hero-header {
+    font-family: "Barlow-ExtraBold";
+    font-size: 25px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding: 0 20px;
+    color: white;
+}

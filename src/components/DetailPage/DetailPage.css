@@ -1,0 +1,45 @@
+@font-face {
+    font-family: "Barlow-ExtraBold";
+    src: local("Barlow-ExtraBold"),
+        url("../../fonts/Barlow-ExtraBold.ttf") format("truetype");
+}
+
+
+
+.outside-container {
+    width: 100%;
+    background-color: #D463F0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    min-height: 600px;
+}
+
+.container2 {
+    margin-bottom: 20px;
+    background-color: #D463F0;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+
+.name {
+    font-family: "Barlow-ExtraBold";
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: white;
+    margin: 0px;
+}
+
+.location {
+    font-family: "Barlow-Regular";
+    font-size: 15px;
+    line-height: 20px;
+    color: white;
+    margin: 0px;
+    opacity: 70%;
+}

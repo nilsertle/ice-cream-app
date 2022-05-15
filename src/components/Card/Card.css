@@ -1,0 +1,38 @@
+@font-face {
+    font-family: "Barlow-ExtraBold";
+    src: local("Barlow-ExtraBold"),
+        url("../../fonts/Barlow-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Barlow-Regular";
+    src: local("Barlow-Regular"),
+        url("../../fonts/Barlow-Regular.ttf") format("truetype");
+}
+
+.card-container {
+    padding: 20px;
+    background-color: #D463F0;
+    border-radius: 25px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.card-name {
+    font-family: "Barlow-ExtraBold";
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: white;
+    margin: 0px;
+}
+
+.card-location {
+    font-family: "Barlow-Regular";
+    font-size: 15px;
+    line-height: 20px;
+    color: white;
+    margin: 0px;
+    opacity: 70%;
+}
